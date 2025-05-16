@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+:root {
+  --uno: blue;
+  --letra: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.Hero {
+  width: 100%;
+}
+.Hero-conta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.Hero-img {
+  width: 100%;
+  max-height: 99vh;
+}
+.Hero-cont {
+  width: 96%;
+  margin: 15px auto;
+  background: #ffffff5e;
+  min-height: 94%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0%;
+  right: 2%;
+}
+.title {
+  width: 35%;
+  margin: 35px;
+  background: #cfcfcf91;
+  border-radius: 15px;
+}
+.titulo {
+  font-size: 23px;
+  color: #000000;
+  text-align: center;
+  padding: 10px 30px;
+  margin: 0;
+}
+.text {
+  text-align: center;
+  padding: 5px 30px;
+  margin: 0;
+}
+.formu {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px auto;
+}
+.Hero-user {
+  padding: 8px 0;
+  text-align: center;
+  height: 3vw;
+  border: none;
+  border-radius: 35px;
+}
+.Hero-user:focus-visible {
+  outline: 1px solid #0092ff;
+}
+.formu button{
+  margin-top: 10px;
+  padding: 5px 15px;
+}
+/* MEDIA QUERY */
+@media (max-width: 500px) {
+  .Hero-img {
+    object-fit: cover;
+    min-height: 99vh;
+  }
+  .Hero-cont {
+    align-items: center;
+    justify-content: center;
+  }
+  .title {
+    width: 100%;
+  }
+  .titulo {
+    font-size: 11vw;
+  }
+  .text {
+    font-size: 6vw;
+  }
+  .formu {
+    width: 90%;
+  }
+  .formu label {
+    font-size: 6vw;
+  }
+  .Hero-user {
+    padding: 13px 14px;
+    height: 10vw;
+  }
+  .formu button {
+    margin: 5vw 0;
+    font-size: 5vw;
+    padding: 2vw 10vw;
+    border-radius: 10px;
+  }
+}
+
+/* para usar */
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
